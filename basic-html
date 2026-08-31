@@ -1,0 +1,31 @@
+<!doctype html>
+    <html lang="nb">
+
+        <head>
+            <meta charset="utf-8"/>
+            <title>En Nettside med standard</title>
+        </head>
+
+        <body>
+
+                <main>
+
+                    <article>
+
+                        <h1>Standard HTML-Struktur</h1>
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ipsum, ducimus quae fugit debitis voluptatem amet magnam nisi eos. Repellat nemo asperiores reiciendis culpa velit eius voluptatem eaque, cupiditate repudiandae.
+                        </p>
+
+                    </article>
+
+                    <article>
+
+                    </article>
+
+                </main>
+
+        </body>
+        
+</html>
