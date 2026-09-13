@@ -1,13 +1,31 @@
 .grid-container {
     display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px 300px 300px;
+    gap: 1em;
+    
+    justify-items: center;
+    align-items: center;
+
+    justify-content: center;
+    align-content: center;
+}
+
+.overskrift {
+color: #b77a8e;
+border-radius: 8px;
+background-color: #6f6a9e;
+
 }
 
 .item {
+    height: 100px;
+    width: 100px;
     padding: 2em;
-    background-color: beige;
-    color: darkred;
+    background-color: #d8c27a;
+    color: #9aae7f;
     text-align: center;
     border-radius: 8px;
     font-size: 2rem;
 
-}
+} 
