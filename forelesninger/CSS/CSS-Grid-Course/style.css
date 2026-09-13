@@ -1,0 +1,13 @@
+.grid-container {
+    display: grid;
+}
+
+.item {
+    padding: 2em;
+    background-color: beige;
+    color: darkred;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 2rem;
+
+}
