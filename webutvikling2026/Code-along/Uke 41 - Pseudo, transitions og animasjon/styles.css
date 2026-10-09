@@ -89,6 +89,7 @@ a {
 	font-weight: bold;
 	padding: 0.85rem 2rem;
 	border-radius: 999px;
+	transition: background-color 100ms ease-in-out;
 }
 
 /* Innhold */
@@ -383,11 +384,15 @@ address {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-
 	height: 2px;
 	width: 0%;
 	background-color: #ef8354;
-	transition: width 150ms ease;
+	transform: scale(1.5);
+	transition: width 500ms ease;
+	transition-property: width;
+	transition-delay: 0;
+	transition-duration: 200ms;
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
 .hovednav a:hover::after {
@@ -397,10 +402,13 @@ address {
 
 .hero .knapp:hover {
 	background-color: #803515;
+	transform: scale(1.1) /* translateX(100px) translateY(100px) */ /* rotateZ(90deg) */;
+
 
 }
 .hero .knapp:active {
 	background-color: #69290e;
+	transform: scale(0.9);
 }
 
 
