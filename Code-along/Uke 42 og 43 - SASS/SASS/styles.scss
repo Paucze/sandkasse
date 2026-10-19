@@ -20,7 +20,24 @@
 	padding: $padding;
 }
 
+@mixin spacing($margin: 0, $padding: 0) {
+	padding: $padding;
+	margin: $margin;
+}
 
+@mixin badge($content: "SKRIV NOE NYTTIG HER", $bg #bf5f36, $text-color: white) {
+	content: "$content";
+	position: absolute;
+	top: -0.6rem;
+	right: -0.06rem;
+	background-color: $bg;
+	color: $text-color;
+	font: 0.7rem;
+	font-weight: bold;
+	padding: 0.5rem;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
 
 
 /* Grunnoppsett */
@@ -116,8 +133,7 @@ a {
 	justify-content: center;
 	gap: 0.5rem spacing.$spacing-medium;
 	list-style: none;
-	margin: 0;
-	padding: 0;
+	@include spacing(2rem);
 }
 
 .hovednav a {
@@ -166,8 +182,7 @@ a {
 
 main {
 	max-width: 1100px;
-	margin: 0 auto;
-	padding: 0 spacing.$spacing-medium;
+	@include spacing(0 auto, 0 spacing.$spacing-medium)
 }
 
 main section {
@@ -477,18 +492,12 @@ address {
 	background-color: #ece3dc;
 }
 
+.menyliste li:nth-child(2)::after{
+	@include badge ("POPULÆR", green)
+}
+
 .menyliste li:nth-child(4)::after {
-	content: "NY";
-	position: absolute;
-	top: -0.6rem;
-	right: -0.06rem;
-	background-color: #bf5f36;
-	color: white;
-	font: 0.7rem;
-	font-weight: bold;
-	padding: 0.5rem;
-	border-radius: 8px;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	@include badge("NY", blue, white);
 }
 
 .om-oss p:first-of-type::first-letter {
